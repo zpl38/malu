@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você é Meu Mundo 💕</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .heart {
+      animation: float 2s ease-in-out infinite;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-pink-200 to-purple-200 flex items-center justify-center min-h-screen">
+  <div class="text-center p-6 max-w-md mx-auto bg-white rounded-lg shadow-lg">
+    <h1 class="text-4xl font-bold text-pink-500 mb-4 fade-in">Você é Meu Mundo 💕</h1>
+    <p class="text-lg text-gray-700 mb-6 fade-in">
+      Desde que você entrou na minha vida, tudo ficou mais colorido. 
+      Seu sorriso ilumina meus dias, e eu não consigo imaginar um futuro sem você. 
+      Quer ser meu amor, hoje e sempre?
+    </p>
+    <div class="flex justify-center space-x-4 mb-6">
+      <div class="text-3xl heart">❤️</div>
+      <div class="text-3xl heart" style="animation-delay: 0.5s;">💖</div>
+      <div class="text-3xl heart" style="animation-delay: 1s;">💞</div>
+    </div>
+    <button id="yesBtn" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">
+      Sim, eu quero! 😊
+    </button>
+  </div>
+
+  <script>
+    document.getElementById('yesBtn').addEventListener('click', () => {
+      alert('Você fez meu coração pular de alegria! 💖 Vamos viver essa aventura juntos?');
+    });
+  </script>
+</body>
+</html>
